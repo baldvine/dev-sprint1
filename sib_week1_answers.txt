@@ -1,3 +1,24 @@
+What is a route, and how do you specify one in Flask?
+    Links a URL with a function. @app.route("/") etc
+
+What is the only route we’ve specified in our application?
+    @app.route("/") etc
+What is the method that gets called when we hit that route?
+    app.run()
+If I wanted to add a route at “/world” that printed “Hello, World” on the screen, what would that code look like?
+    @app.route("/hello")
+    def hello():
+        return "Hello World!"
+If I create a new application and import testingflask.py (a.k.a. I am not running it directly), will code under the ‘if __name__ == “__main__”: be executed? Why not?
+   No, because it will not be called from __main__ but from another frame.
+
+Koch curve works! :)
+
 *** Cut and paste the for loop here ***
+                	{% for message in messages %}
+{{message}}
+                    {% endfor %}
+
 
 *** What is the for loop doing? ***
+Running through all the messages that have been stored and showing them
